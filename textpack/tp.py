@@ -102,3 +102,6 @@ def read_excel(excel_path, columns_to_group, sheet_name=None, match_threshold=0.
 
 def read_csv(csv_path, columns_to_group, match_threshold=0.75, ngram_remove=r'[,-./]', ngram_length=3):
     return TextPack(pd.read_csv(csv_path), columns_to_group, match_threshold, ngram_remove, ngram_length)
+
+def consume(frame, columns_to_group, match_threshold=0.75, ngram_remove=r'[,-./]', ngram_length=3):
+    return TextPack(frame, columns_to_group, match_threshold, ngram_remove, ngram_length)

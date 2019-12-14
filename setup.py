@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="textpack",
+    name="textpack_f",
     version="0.0.5",
     author="Luke Whyte",
     author_email="lukeawhyte@gmail.com",
